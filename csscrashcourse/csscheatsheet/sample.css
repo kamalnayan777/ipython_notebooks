@@ -1,0 +1,15 @@
+div {
+    color: sienna;
+    background-color: snow;
+}
+
+.second , .third{
+    color: tomato;
+    background-color: violet;
+    size: 2cm;
+}
+
+#fourth {
+    color: yellow;
+    background-color: black;
+}
