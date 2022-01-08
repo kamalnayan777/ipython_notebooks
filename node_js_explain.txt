@@ -1,0 +1,661 @@
+Last login: Mon Jan  3 18:31:56 on ttys004
+(base) kamalseth@kamals-MacBook-Air ~ % node
+Welcome to Node.js v14.18.1.
+Type ".help" for more information.
+> console.log('hello world')
+hello world
+undefined
+> console.log('hello',' world')
+hello  world
+undefined
+> console.log('hello',' world','!!')
+hello  world !!
+undefined
+> console.log('hello' ,' ','world',2022)
+hello   world 2022
+undefined
+> #comment
+#comment
+^^^^^^^^
+
+Uncaught SyntaxError: Unexpected identifier
+> //comment
+undefined
+> /*
+... multiline
+... comment
+... */
+undefined
+> console.log(2+3)
+5
+undefined
+> console.log(2/3)
+0.6666666666666666
+undefined
+> console.log(2//3)
+...
+...
+... ;
+console.log(2//3)
+            ^
+
+Uncaught SyntaxError: missing ) after argument list
+> console.log(3%2)
+1
+undefined
+> console.log(10**5)
+100000
+undefined
+> True
+Uncaught ReferenceError: True is not defined
+> False
+Uncaught ReferenceError: False is not defined
+> true;
+true
+> false;
+false
+> let name ='kamal seth';
+undefined
+> var name ='kamal seth'
+Uncaught SyntaxError: Identifier 'name' has already been declared
+> console.log(name)
+kamal seth
+undefined
+> let name ='kamal '
+Uncaught SyntaxError: Identifier 'name' has already been declared
+> let name ='kamal'
+Uncaught SyntaxError: Identifier 'name' has already been declared
+> const name ='kamal '
+Uncaught SyntaxError: Identifier 'name' has already been declared
+> const name1 ='kamal '
+undefined
+> var age =30
+undefined
+> None
+Uncaught ReferenceError: None is not defined
+> null
+null
+> let val = null
+undefined
+> typeof
+...
+...
+... ;
+;
+^
+
+Uncaught SyntaxError: Unexpected token ';'
+> console.log(typeof true)
+boolean
+undefined
+> console.log(typeof 12)
+number
+undefined
+> console.log(typeof 12.8)
+number
+undefined
+> console.log(typeof 'kamal')
+string
+undefined
+> console.log(typeof '34')
+string
+undefined
+> '34'+'34'
+'3434'
+> '34'+34
+'3434'
+> 34+'34'
+'3434'
+> console.log(typeof null)
+object
+undefined
+> console.log(typeof undefined)
+undefined
+undefined
+> let firstname ='kamal'
+undefined
+> firstname
+'kamal'
+> let lastname ='seth'
+undefined
+> let age = 30
+Uncaught SyntaxError: Identifier 'age' has already been declared
+> delete age
+false
+> let age = 30
+Uncaught SyntaxError: Identifier 'age' has already been declared
+> console.log(firstname,lastname)
+kamal seth
+undefined
+> let firstname
+Uncaught SyntaxError: Identifier 'firstname' has already been declared
+> var firstname ='kamal '
+Uncaught SyntaxError: Identifier 'firstname' has already been declared
+> %reset%
+%reset%
+^
+
+Uncaught SyntaxError: Unexpected token '%'
+> exit()
+Uncaught ReferenceError: exit is not defined
+> exit
+Uncaught ReferenceError: exit is not defined
+>
+(To exit, press Ctrl+C again or Ctrl+D or type .exit)
+>
+(base) kamalseth@kamals-MacBook-Air ~ % node
+Welcome to Node.js v14.18.1.
+Type ".help" for more information.
+> var firstName ='kamal'
+undefined
+> var firstName ='kamal'
+undefined
+> const age = 30;
+undefined
+> age
+30
+> const age =31
+Uncaught SyntaxError: Identifier 'age' has already been declared
+> let word ='javaScript'
+undefined
+> word
+'javaScript'
+> console.alert(word)
+Uncaught TypeError: console.alert is not a function
+> alert(word)
+Uncaught ReferenceError: alert is not defined
+> word
+'javaScript'
+> word[0]
+'j'
+> word[-1]
+undefined
+> word[:5]
+word[:5]
+     ^
+
+Uncaught SyntaxError: Unexpected token ':'
+> word[5]
+'c'
+> const js ='javascript'
+undefined
+> const py ='python'
+undefined
+> js ==py
+false
+> js ==js
+true
+> 24==24
+true
+> 24=='24'
+true
+> 24==='24'
+false
+> 24===24
+true
+> false ==true
+false
+> false == false
+true
+> var nums = [1,2,3,4,5,6]
+undefined
+> nums
+[ 1, 2, 3, 4, 5, 6 ]
+> typeof nums
+'object'
+> nums
+[ 1, 2, 3, 4, 5, 6 ]
+> var nums1 =[1,2,3,4,5,6]
+undefined
+> nums ==nums1
+false
+> let userDetails {'name':'kamal'}
+let userDetails {'name':'kamal'}
+                ^
+
+Uncaught SyntaxError: Unexpected token '{'
+> let userDetails ={'name':'kamal'}
+undefined
+> userDetails
+{ name: 'kamal' }
+> let details = {
+... name ='kamal seth',
+... age = 30
+... }
+...
+... ;
+name ='kamal seth',
+^^^^^^^^^^^^^^^^^^
+
+Uncaught SyntaxError: Invalid shorthand property initializer
+> let details = {
+... 'name':'kamal','age':30
+... }
+undefined
+> details
+{ name: 'kamal', age: 30 }
+> details ==userDetails
+false
+> details.name
+'kamal'
+> details['name']
+'kamal'
+> nums1
+[ 1, 2, 3, 4, 5, 6 ]
+> min(nums1)
+Uncaught ReferenceError: min is not defined
+> const pi = Math.PI
+undefined
+> pi
+3.141592653589793
+> Math.round(5.677655)
+6
+> Math.floor(5,67787)
+5
+> Math.floor(5.67787)
+5
+> Math.ceil(5,6778)
+5
+> Math.ceil(5.6778)
+6
+> min(nums1)
+Uncaught ReferenceError: min is not defined
+> Math.min(nums1)
+NaN
+> Math.min(4,5,34,2,1)
+1
+> Math.min([4,5,34,2,1])
+NaN
+> Math.max(5,6,7,8,9)
+9
+> Math.random()
+0.3094110156927836
+> Math.random()
+0.5649534535810914
+> Math.random()*11// return random no from 0 10
+2.950559922214431
+> Math.random()*11// return random no from 0 10
+9.390519938062598
+> Math.random()*11// return random no from 0 10
+9.974023195838697
+> Math.random()*11// return random no from 0 10
+3.099476736246877
+> Math.floor(Math.random()*11)// return random no from 0 10
+10
+> Math.floor(Math.random()*11)// return random no from 0 10
+5
+> Math.floor(Math.random()*11)// return random no from 0 10
+7
+> Math.floor(Math.random()*51)// return random no from 0 10
+29
+> Math.floor(Math.random()*51)// return random no from 0 10
+17
+> Math.floor(Math.random()*51)// return random no from 0 10
+39
+> Math.floor(Math.random()*51)// return random no from 0 10
+31
+> Math.floor(Math.random()*51)// return random no from 0 10
+46
+> Math.floor(Math.random()*51)// return random no from 0 10
+26
+> Math.floor(Math.random()*51)// return random no from 0 10
+2
+> Math.floor(Math.random()*51)// return random no from 0 10
+28
+> Math.abs(-34)
+34
+> Math.abs(34)
+34
+> Math.sqrt(100)
+10
+> Math.sqrt(16)
+4
+> Math.sqrt(2)
+1.4142135623730951
+> 2**3
+8
+> Math.pow(2,3)
+8
+> Math.E
+2.718281828459045
+> Math.log(2)
+0.6931471805599453
+> Math.log(10)
+2.302585092994046
+> Math.sin(90)
+0.8939966636005579
+> Math.cos(90)
+-0.4480736161291702
+> Math.cos(180)
+-0.5984600690578581
+> name
+Uncaught ReferenceError: name is not defined
+> var firstName ='kamal'
+undefined
+> var lastName ='seth'
+undefined
+> firstName+lastName
+'kamalseth'
+> firstName+' '+lastName
+'kamal seth'
+> 'kamal'+'seth'
+'kamalseth'
+> 'kamal'+' '+'seth'
+'kamal seth'
+> var intro = " my name is python \
+... i am most popular prog language \
+... i have another sibling named JSON
+var intro = " my name is python \
+
+Uncaught SyntaxError: Invalid or unexpected token
+> var intro = " my name is python \
+... fgbgfd"
+undefined
+> intro
+' my name is python fgbgfd'
+> \
+\
+^
+
+Uncaught SyntaxError: Invalid or unexpected token
+> \
+\
+^
+
+Uncaught SyntaxError: Invalid or unexpected token
+> console.log('name\n')
+name
+
+undefined
+> console.log('name\t')
+name
+undefined
+> console.log('name\\')
+name\
+undefined
+> console.log('"name"')
+"name"
+undefined
+> console.log(''name'')
+console.log(''name'')
+            ^^
+
+Uncaught SyntaxError: missing ) after argument list
+> console.log("'name'")
+'name'
+undefined
+> var firstName
+undefined
+> var firstName ='kamal'
+undefined
+> var lastName ='kamal'
+undefined
+> var age  = 16;
+Uncaught SyntaxError: Identifier 'age' has already been declared
+> var ages  = 16;
+undefined
+> age
+30
+> ages
+16
+> firstName+' '+lastName+' '+age
+'kamal kamal 30'
+> `name is ${firstName} ${lastName} and ages is :${ages}`
+'name is kamal kamal and ages is :16'
+> `${2>3}`
+'false'
+> `${2+3}`
+'5'
+> `${'kamal'=='kamal'}`
+'true'
+> `${'kamal'==='kamal'}`
+'true'
+> `${'kamal'==='kama'}`
+'false'
+> js
+'javascript'
+> js.length
+10
+> js[0]
+'j'
+> js[3]
+'a'
+> var a = js[2]
+undefined
+> a
+'v'
+> js
+'javascript'
+> js.length
+10
+> js[js.length]
+undefined
+> js[js.length-1
+... ]
+'t'
+> js[0]
+'j'
+> js
+'javascript'
+> js.upper()
+Uncaught TypeError: js.upper is not a function
+> js.toUpperCase()
+'JAVASCRIPT'
+> 'KAMAL'.toLowerCase()
+'kamal'
+> js
+'javascript'
+> js[6]
+'r'
+> js[:6]
+js[:6]
+   ^
+
+Uncaught SyntaxError: Unexpected token ':'
+> js.substr(0,6)
+'javasc'
+> js.substr(6,0)
+''
+> js.substr(0,4)
+'java'
+> js
+'javascript'
+> var name='Kamal Seth'
+undefined
+> name
+'Kamal Seth'
+> name.split()
+[ 'Kamal Seth' ]
+> name.split(' ')
+[ 'Kamal', 'Seth' ]
+> name.split('a')
+[ 'K', 'm', 'l Seth' ]
+>
+>
+>
+> name.split('a')[2
+... ]
+'l Seth'
+> name
+'Kamal Seth'
+> var name ='   kamal    seth   '
+undefined
+> name
+'   kamal    seth   '
+> name.trim()
+'kamal    seth'
+> name
+'   kamal    seth   '
+> name.trim()
+'kamal    seth'
+> var a  =name.trim()
+undefined
+> a
+'kamal    seth'
+> name
+'   kamal    seth   '
+> name.includes('se')
+true
+> name.includes('st')
+false
+> name.includes('seth')
+true
+> name.includes('    ')
+true
+> name.includes('    s')
+true
+> name.includes('    t')
+false
+> name
+'   kamal    seth   '
+> name.replace('am','Am')
+'   kAmal    seth   '
+> name
+'   kamal    seth   '
+> name.replace('a','A')
+'   kAmal    seth   '
+> name.replace('a','')
+'   kmal    seth   '
+> ['kamal']
+[ 'kamal' ]
+> name
+'   kamal    seth   '
+> name.charAt(5)
+'m'
+> name[5]
+'m'
+> name.charAt(4)
+'a'
+> name[4]
+'a'
+> name
+'   kamal    seth   '
+> name.charCodeAt(5)
+109
+> name.charCodeAt(4)
+97
+> name
+'   kamal    seth   '
+> name.indexOf('kam')
+3
+> name.indexOf('se')
+12
+> name.indexOf('fg')
+-1
+> name
+'   kamal    seth   '
+> name.lastIndexOf('ka')
+3
+> name.lastIndexOf('fg')
+-1
+> firstName+' '+lastName
+'kamal kamal'
+> js.concat('hi')
+'javascripthi'
+> js.concat(' hi')
+'javascript hi'
+> 'this'.concat('is').concat('JS')
+'thisisJS'
+> 'this'.concat(' is').concat(' JS')
+'this is JS'
+> name
+'   kamal    seth   '
+> name.startsWith('k')
+false
+> name.startsWith('   k')
+true
+> name.startsWith('   ka')
+true
+> name.endsWith('   ')
+true
+> 'kamal'.startsWith('k')
+true
+> 'kamal'.endsWith('k')
+false
+> 'kamal'.endsWith('l')
+true
+> name
+'   kamal    seth   '
+> name.search('k')
+3
+> name.search('ka')
+3
+> typeof '10'
+'string'
+> '10'+2
+'102'
+> int(10)
+Uncaught ReferenceError: int is not defined
+> parseInt('10')
+10
+> parseInt('10')+2
+12
+> Number('10')+2
+12
+> parseFloat('34,5')
+34
+> parseFloat('34.5')
+34.5
+> parseFloat('34.5')+2
+36.5
+> parseFloat('34')+2
+36
+> var greater = 3>4
+undefined
+> greater
+false
+> false ==0
+true
+> false ==0
+true
+> true ==1
+true
+> let hi;
+undefined
+> hi
+undefined
+> typeof hi
+'undefined'
+> hi ==undefined
+true
+> hi ==undefined
+true
+> let empty = null
+undefined
+> empty
+null
+> typeof empty
+'object'
+> empty ==null
+true
+> 2+3
+5
+> 2-3
+-1
+> 2//3
+2
+> 2%4
+2
+> 2**6
+64
+> 2==2
+true
+> 2 !=2
+false
+> 2 !=3
+true
+> 2>=3
+false
+> 4>=3
+true
+> 4<=6
+true
+> let not  =NaN
+undefined
+> not
+NaN
+> typeof not
+'number'
+> not ==NaN
+false
+>
